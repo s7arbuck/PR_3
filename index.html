@@ -133,28 +133,29 @@
 
 <!-- Start of Testimonials -->
 <section id="testimonials">
-    <div class="thing" id="wrapper">
-        <div><img src="https://s7arbuck.github.io/stuff/img/image2.jpg" alt="slider image"></div>
-        <div><img src="https://s7arbuck.github.io/stuff/img/image2.jpg" alt="slider image"></div>
-        <div><img src="https://s7arbuck.github.io/stuff/img/image2.jpg" alt="slider image"></div>
-
-    <div class="slick-slider">
-        <div class="slick-slide">
-            <h1>Hello</h1>
-        </div>
-        <div class="slick-slide">
-            <h1>Is it me</h1>
-        </div>
-        <div class="slick-slide">
-            <h1>You're Looking for?</h1>
-        </div>
-  <div>your content</div>
-  <div>your content</div>
-  <div>your content</div>
+<div class="slider">
+  <div class="slide">
+    <img src="https://s7arbuck.github.io/stuff/img/image2.jpg" alt="" class="img-responsive" />
+    <h1>slide 1</h1>
+    <p>more talk</p>
+  </div>
+  <div class="slide">
+    <img src="http://fillmurray.com/300/300" alt="" class="img-responsive" />
+    <h1>slide 2</h1>
+  </div>
+  <div class="slide">
+    <img src="http://fillmurray.com/300/300" alt="" class="img-responsive" />
+    <h1>slide 3</h1>
+  </div>
+  <div class="slide">
+    <img src="http://fillmurray.com/300/300" alt="" class="img-responsive" />
+    <h1>slide 4</h1>
+  </div>
+  <div class="slide">
+    <img src="http://fillmurray.com/300/300" alt="" class="img-responsive" />
+    <h1>slide 5</h1>
+  </div>
 </div>
-
-
-</BR>
 </section>
 
 <!-- End of Testimonials -->
@@ -195,11 +196,19 @@
     <script src="https://s7arbuck.github.io/main.js"></script>
     <script type="text/javascript" src="https://s7arbuck.github.io/stuff/slick/slick/slick.min.js"></script>
   <script type="text/javascript">
-    $(document).ready(function(){
-  $('.your-class').slick({
-    setting-name: setting-value
+window.onload=function(){
+  $('.slider').slick({
+  autoplay:true,
+  autoplaySpeed:3000,
+  arrows:true,
+  prevArrow:'<button type="button" class="slick-prev"></button>',
+  nextArrow:'<button type="button" class="slick-next"></button>',
+  centerMode:true,
+  slidesToShow:2,
+  slidesToScroll:1
   });
-});
+};
+
   </script>
 
 <!--- End of Scripts -->
